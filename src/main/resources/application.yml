@@ -1,0 +1,19 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: email-authentication-simple
+  datasource:
+    url: jdbc:postgresql://localhost:5432/email-authentication-simple
+    username: email-authentication-simple
+    password: draculion17
+  main:
+    web-application-type: servlet
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    show_sql: true
